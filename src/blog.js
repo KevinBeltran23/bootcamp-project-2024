@@ -2,13 +2,13 @@ var blogs = [
     {
         title: "First Blog Entry",
         date: "10-18-2024",
-        description: "Hey yall. This is my first blog entry. This is mainly for testing stylization and formatting. I am also trying to get images to work :(",
+        description: "Hey yall. This is my first blog entry. This is mainly for testing stylization and formatting. I have added some generic images for now",
         image: "genericImage.png",
         imageAlt: "digitally drawn representation of a file",
         slug: "blogs/firstBlog.html",
     },
     {
-        title: "Second Blog Entry",
+        title: "A Bit More About Me",
         date: "10-18-2024",
         description: "Hey yall. There is nothing of significance here yet either. It is simply for testing how multiple blog entries will appear",
         image: "genericImage.png",
