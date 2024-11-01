@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Checking if my ssh key is working on ubuntu
 First, run the development server:
 
 ```bash
