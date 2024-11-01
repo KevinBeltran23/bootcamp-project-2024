@@ -1,0 +1,18 @@
+  .aboutContainer {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutImage {
+    margin-right: 20px;
+  }
+  
+  .aboutImage img {
+    border-radius: 8px;
+  }

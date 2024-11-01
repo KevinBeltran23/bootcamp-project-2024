@@ -9,15 +9,16 @@ export default function Navbar() {
     // NOTE: we use "class" in HTML but React is quirky so we have to 
     // change all the "class" to "className"
     <header className={style.navbar} >
-      <h1> Singh's Personal Website </h1>
+      <h1 className={style.logo}><Link href="/" >Personal Website</Link></h1>
       <nav>
         {/* We'll use Link from now on instead of <a></a>
 			      Links are just Next.js wrapper arounds <a> elements anyways
          */}
         <Link href="/" >Home</Link>
         <Link href="/blogs">Blogs</Link>
+        <Link href="/portfolio">Portfolio</Link>
         <Link href="/resume" >Resume</Link>
-        <Link href="/about" >Contact Me</Link>
+        <Link href="/contact" >Contact</Link>
 				{/* More Links ... */}
       </nav>
     </header>

@@ -33,7 +33,7 @@
   .navbar a:hover {
     color: var(--cg-yellow);
   }
-  
+
   @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -43,4 +43,12 @@
     .navbar a {
         margin: 5px 0;
     }
+  
+    .resume {
+        padding: 15px;
+    }
+  }
+
+  .logo a {
+    font-family: "Titillium Web", 'Times New Roman', Times, serif;
   }

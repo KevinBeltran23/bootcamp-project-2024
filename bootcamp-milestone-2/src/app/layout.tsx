@@ -17,7 +17,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-//
+
 
 export const metadata: Metadata = {
   title: "[name] Personal Website",
@@ -32,8 +32,8 @@ export default function RootLayout({
 		// returns boilerplate
   return (
     <html lang="en">
-      <body className={inter.className}> //remember Inter is simply the font I chose.
-	        <Navbar/> // This sets the navbar on every page 
+      <body /*className={inter.className}*/> 
+	        <Navbar/>
         {children}
         </body>
     </html>
