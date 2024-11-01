@@ -130,7 +130,6 @@ export default function Resume() {
           </section>
         </div>
       </main>
-      <footer className={style.footer}>© 2023 KevinBeltran's Personal Website | All Rights Reserved</footer>
     </div>
   );
 }
