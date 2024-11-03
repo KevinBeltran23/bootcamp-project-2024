@@ -1,7 +1,7 @@
 import React from 'react';
-import type { Blog } from "@/static/blogData"
+import type { Blog } from "@/typings/blog.ts"
 import Image from 'next/image'
-import style from './blogPreview.module.css'
+import style from '@styles/blogPreview.module.css'
 
 export default function BlogPreview(props: Blog) {
   return (

@@ -18,8 +18,14 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src",  // Set base URL to src
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"],  // This maps to all files in src
+      "@styles/*": ["styles/*"],  // This specifically maps to styles
+      "@static/*": ["static/*"],  // This specifically maps to styles
+      "@components/*": ["components/*"],  // This specifically maps to styles
+      "@typings/*": ["typings/*"],  // This specifically maps to styles
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/blogPreview.jsx"],

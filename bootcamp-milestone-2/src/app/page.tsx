@@ -1,5 +1,5 @@
 // You can name the function within page.tsx anything you want.
-import style from "../components/home.module.css";
+import style from "@styles/home.module.css";
 import Image from 'next/image'; 
 import BlogPreview from '@/components/blogPreview';
 import blogs from '@/static/blogData';

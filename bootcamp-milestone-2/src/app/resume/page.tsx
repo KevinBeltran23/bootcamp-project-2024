@@ -1,4 +1,4 @@
-import style from "../../components/resume.module.css";
+import style from "@styles/resume.module.css";
 import Link from "next/link";
 
 export default function Resume() {

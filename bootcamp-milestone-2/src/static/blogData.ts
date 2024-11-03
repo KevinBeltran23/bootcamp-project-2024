@@ -1,11 +1,4 @@
-export type Blog = {
-	name: string;
-	posted: string;
-	description: string;
-    image: string;
-    imageAlt: string;
-    slug: string;
-};
+import type { Blog } from "@/typings/blog.ts"
 
 const blogs: Blog[] = [
 	{
