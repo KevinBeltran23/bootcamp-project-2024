@@ -28,6 +28,6 @@
 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/blogPreview.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/blogPreview.jsx", "src/app/blogs/moreAboutMe"],
   "exclude": ["node_modules"]
 }

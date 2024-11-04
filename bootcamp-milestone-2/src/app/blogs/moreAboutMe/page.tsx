@@ -5,7 +5,7 @@ export default function MoreAboutMe() {
   return (
     <div>
       <main>
-      <h1>My First Blog</h1>
+      <h1>This is more about me</h1>
       <h3>10/21/2024</h3>
         <div className={style.blogContainer}>
             <div className={style.blogImage}>

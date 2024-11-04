@@ -9,7 +9,6 @@ export default function FirstBlog() {
       <h3>10/21/2024</h3>
         <div className={style.blogContainer}>
             <div className={style.blogImage}>
-            {/*image here*/}
             </div>
             <div className={style.blogText}>
             <p>

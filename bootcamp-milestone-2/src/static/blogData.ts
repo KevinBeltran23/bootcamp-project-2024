@@ -7,7 +7,7 @@ const blogs: Blog[] = [
 		description: "Hey yall. This is my first blog entry. This is mainly for testing stylization and formatting. I have added some generic images for now",
         image: "/genericImage.png",
         imageAlt: "digitally drawn representation of a file",
-        slug: "/blogs/firstBlog.tsx",
+        slug: "/blogs/firstBlog",
 	},
 	{
 		name: "A Bit More About Me",
@@ -15,7 +15,7 @@ const blogs: Blog[] = [
 		description: "Hey yall. There is nothing of significance here yet either. It is simply for testing how multiple blog entries will appear",
         image: "/genericImage.png",
         imageAlt: "digitally drawn representation of a file",
-        slug: "/blogs/moreAboutMe.tsx",
+        slug: "/blogs/moreAboutMe",
 	},
 	{
 		name: "Third Blog Entry",

@@ -10,7 +10,7 @@ export default function Home() {
         <h1>About Me</h1>
         <div className={style.aboutContainer}>
           <div className={style.aboutImage}>
-            <Image src="/../../public/ProfilePicture.jpg" alt="Kevins image" width={500} height={500} ></Image>
+            <Image src="/ProfilePicture.jpg" alt="Kevin's image" width={500} height={500} />
           </div>
           <div className="about-text">
             <p>
