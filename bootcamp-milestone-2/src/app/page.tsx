@@ -1,4 +1,3 @@
-// You can name the function within page.tsx anything you want.
 import style from "@styles/home.module.css";
 import Image from 'next/image'; 
 import BlogPreview from '@/components/blogPreview';
@@ -22,7 +21,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={style.aboutContainer}>
+        <div className={style.blogContainer}>
           {blogs.map(blog => 
             <BlogPreview {...blog} />
           )}
