@@ -7,7 +7,7 @@ const blogs: Blog[] = [
 		description: "Hey yall. This is my first blog entry. This is mainly for testing stylization and formatting. I have added some generic images for now",
         image: "/genericImage.png",
         imageAlt: "digitally drawn representation of a file",
-        slug: "blogs/firstBlog.html",
+        slug: "/blogs/firstBlog.tsx",
 	},
 	{
 		name: "A Bit More About Me",
@@ -15,7 +15,7 @@ const blogs: Blog[] = [
 		description: "Hey yall. There is nothing of significance here yet either. It is simply for testing how multiple blog entries will appear",
         image: "/genericImage.png",
         imageAlt: "digitally drawn representation of a file",
-        slug: "blogs/moreAboutMe.html",
+        slug: "/blogs/moreAboutMe.tsx",
 	},
 	{
 		name: "Third Blog Entry",
@@ -23,7 +23,7 @@ const blogs: Blog[] = [
 		description: "This is yet another blog entry for testing my website. I want to add multiple of these so that I can sample what it will look like when populated.",
         image: "/genericImage.png",
         imageAlt: "digitally drawn representation of a file",
-        slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+        slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024", // This one is external
 	},
 ];
 
