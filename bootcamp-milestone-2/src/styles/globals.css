@@ -21,7 +21,7 @@ h2 {
   color: var(--cg-blue);
 }
 
-p {
+p, ul {
   margin-bottom: 20px;
   font-size: 1.1rem;
   color: var(--cg-black);

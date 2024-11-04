@@ -39,3 +39,19 @@
   .downloadButton:hover {
     background-color: var(--cg-dark-blue);
   }
+
+.entryDescription ul {
+  padding-left: 0; /* Remove left padding */
+}
+
+.entryDescriptionWithBullet ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds padding for bullet points */
+}
+
+.entryDescriptionWithoutBullet ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Remove left padding */
+}
+
+  
