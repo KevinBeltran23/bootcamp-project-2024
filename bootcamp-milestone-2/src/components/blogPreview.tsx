@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Blog } from "@/typings/blog.ts";
 import Image from 'next/image';
-import style from '@styles/blogPreview.module.css';
+import style from '@styles/blog.module.css';
 import Link from "next/link";
 
 export default function BlogPreview(props: Blog) {
