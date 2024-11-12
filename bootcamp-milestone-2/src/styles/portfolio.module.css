@@ -1,13 +1,4 @@
-.portfolio-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--cg-white);
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .information {
+ .information {
     margin-bottom: 20px;
   }
   
@@ -22,6 +13,82 @@
     border-radius: 8px;
   }
   
-  .project-details {
+  .projectDetails {
     max-width: 500px;
+  }
+
+  .portfolioContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolioEntry {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--cg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolioEntry img {
+    max-width: 50%; 
+    max-height: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .portfolioEntry img {
+    max-width: 50%; 
+    max-height: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .portfolioEntry h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolioEntry p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .portfolioText p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .portfolioEntry a {
+    color: var(--cg-blue);
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+  
+  .portfolioEntry a:hover {
+    color: var(--cg-dark-blue);
+  }
+  
+  @media (max-width: 768px) {
+    .portfolioEntry {
+        padding: 15px;
+    }
+  
+    .portfolioEntry h1 {
+        font-size: 1.2rem;
+    }
+  
+    .portfolioEntry p {
+        font-size: 1rem;
+    }
+  
+    .blogText p {
+        font-size: 1rem;
+    }
   }

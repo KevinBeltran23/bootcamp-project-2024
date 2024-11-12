@@ -10,5 +10,5 @@ export type Entry = {
 
 export type Section = {
   name: string;
-  children: ReactNode; // This should be a ReactNode, not strictly an array of Entry objects
+  children: ReactNode; 
 };

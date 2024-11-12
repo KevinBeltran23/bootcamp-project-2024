@@ -1,25 +1,28 @@
 import React from 'react';
-import style from '@styles/contact.module.css';
+import portfolioEntries from '@/static/portfolioData';
+import style from '@styles/portfolio.module.css'
+import PortfolioEntry from '@/components/portfolioEntry';
 
-export default function Contact() {
+export default function Portfolio() {
   return (
     <div>
       <main>
-        <h1 className={style.contactTitle}>Contact</h1>
-        <p className={style.contactParagraph}>kevinbeltran2437@gmail.com | 805-416-9229</p>
-        <form className={style.contactForm}>
-          <label htmlFor="name">Name: </label>
-          <input type="text" id="name" name="name" placeholder="Name" />
-          
-          <label htmlFor="email">Email: </label>
-          <input type="text" id="email" name="email" placeholder="Email" />
-          
-          <label htmlFor="message">Message: </label>
-          <textarea id="message" name="message" placeholder="Your message here"></textarea>
-          
-          <input type="submit" value="Submit" />
-        </form>
+        <h1 className={style.portfolioTitle}>Portfolio</h1>
+        <div id={style.portfolioContainer} className={style.portfolioContainer}>
+          <p> Welcome to My Portfolio! This is a work in progress :) </p>
+          <p> It currently only contains my blogs but later I will add my projects </p>
+
+          <div>
+          {portfolioEntries.map((portfolio, index) => 
+            <PortfolioEntry key={index} {...portfolio} />
+          )}
+          </div>
+
+        </div>
       </main>
     </div>
   );
 }
+
+
+
