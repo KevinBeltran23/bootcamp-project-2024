@@ -1,9 +1,8 @@
 import React from 'react';
-import type { Entry } from "@/typings/resume.ts";
+import type { Entry } from "@/typings/resume";
 import style from '@styles/resume.module.css';
 
 export default function ResumeEntry(props: Entry) {
-  // Determine class based on entry type
   const descriptionClass =
     props.type === "coursework" || props.type === "skill"
       ? style.entryDescriptionWithBullet
@@ -15,8 +14,8 @@ export default function ResumeEntry(props: Entry) {
       <p className={style.entryInfo}><em>{props.info}</em></p>
       <div className={descriptionClass}>
         <ul>
-          {props.description.map((desc, index) => (
-            <li key={index}>{desc}</li> 
+          {(props.description || []).map((desc, index) => (
+            <li key={index}>{desc}</li>
           ))}
         </ul>
       </div>

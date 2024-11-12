@@ -12,8 +12,8 @@ export default function Blogs() {
           <p> Welcome to My Blog! This is a work in progress :) </p>
 
           <div>
-          {blogs.map(blog => 
-            <BlogPreview {...blog} />
+          {blogs.map((blog, index) => 
+            <BlogPreview key={index} {...blog} />
           )}
           </div>
 

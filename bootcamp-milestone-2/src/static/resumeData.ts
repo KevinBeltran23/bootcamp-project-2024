@@ -122,25 +122,25 @@ const entries: Entry[] = [
 
 const sections: Section[] = [
     {
-        name: "Education",
-        children: entries.filter(entry => entry.type === "education"),
+      name: "Education",
+      children: entries.filter(entry => entry.type === "education"),
     },
     {
-        name: "Experience",
-        children: entries.filter(entry => entry.type === "experience"),
+      name: "Experience",
+      children: entries.filter(entry => entry.type === "experience"),
     },
     {
-        name: "Projects",
-        children: entries.filter(entry => entry.type === "project"),
+      name: "Projects",
+      children: entries.filter(entry => entry.type === "project"),
     },
     {
-        name: "Skills",
-        children: entries.filter(entry => entry.type === "skill"),
+      name: "Skills",
+      children: entries.filter(entry => entry.type === "skill"),
     },
     {
-        name: "Coursework",
-        children: entries.filter(entry => entry.type === "coursework"),
+      name: "Coursework",
+      children: entries.filter(entry => entry.type === "coursework"),
     },
-];
+  ];
 
 export default { sections, entries };
