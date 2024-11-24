@@ -1,7 +1,7 @@
 import React from 'react';
 import portfolioEntries from '@/static/portfolioData';
 import style from '@styles/portfolio.module.css'
-import PortfolioEntry from '@/components/portfolioEntry';
+import PortfolioPreview from '@/components/portfolioPreview';
 
 export default function Portfolio() {
   return (
@@ -14,7 +14,7 @@ export default function Portfolio() {
 
           <div>
           {portfolioEntries.map((portfolio, index) => 
-            <PortfolioEntry key={index} {...portfolio} />
+            <PortfolioPreview key={index} {...portfolio} />
           )}
           </div>
 

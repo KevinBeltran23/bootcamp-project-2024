@@ -4,9 +4,9 @@ import Image from 'next/image';
 import style from '@styles/portfolio.module.css';
 import Link from "next/link";
 
-export default function PortfolioEntry(props: Portfolio) {
+export default function PortfolioPreview(props: Portfolio) {
   return (
-    <div className={style.portfolioEntry}>
+    <div className={style.portfolioPreview}>
       <h1>{props.name}</h1>
       <div>
         <Image src={props.image} alt={props.imageAlt} width={500} height={500} />
