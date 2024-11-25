@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "./src",  // Set base URL to src
+    "paths": {
+      "@/*": ["*"],  // This maps to all files in src
+      "@styles/*": ["styles/*"],  // This specifically maps to styles
+      "@static/*": ["static/*"],  // This specifically maps to styles
+      "@components/*": ["components/*"],  // This specifically maps to styles
+      "@typings/*": ["typings/*"],  // This specifically maps to styles
+
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/blogPreview.jsx", "src/app/blogs/moreAboutMe"],
+  "exclude": ["node_modules"]
+}
