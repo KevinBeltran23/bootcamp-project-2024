@@ -10,27 +10,23 @@ let connection: typeof mongoose;
  * Call this function at the start of api routes and data fetches
  * @returns {Promise<typeof mongoose>}
  */
-const connectDB = async () => {
+
+export const connectDB = async () => {
   if (!connection) {
     connection = await mongoose.connect(url);
     return connection;
   }
 };
 
-async function getBlogs(){
-	await connectDB() // function from db.ts before
-
+export const getBlogs = async () => {
+	await connectDB();
+  
 	try {
-			// query for all blogs and sort by date
-	    const blogs = await Blog.find().sort({ date: -1 }).orFail()
-			// send a response as the blogs as the message
-	    return blogs
+	  // Query for all blogs and sort by date
+	  const blogs = await Blog.find().sort({ date: -1 }).orFail();
+	  // return stuff here
+	  return blogs;
 	} catch (err) {
-	    return null
+	  return null;
 	}
-}
-
-export default {
-  connectDB,
-  getBlogs
-}
+  };

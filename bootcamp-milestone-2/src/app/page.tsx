@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className={style.blogContainer}>
           {blogs.map(blog => 
-            <BlogPreview {...blog} />
+            <BlogPreview key={blog.name} {...blog} />
           )}
         </div>
       </main>
