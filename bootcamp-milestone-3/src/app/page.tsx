@@ -1,7 +1,5 @@
 import style from "@styles/home.module.css";
 import Image from 'next/image'; 
-import BlogPreview from '@/components/blogPreview';
-import blogs from '@/static/blogData';
 
 export default function Home() {
   return (
@@ -20,11 +18,7 @@ export default function Home() {
               I love running in my free time, playing the piano, and going on evening hikes. I am involved in the <em>Cal Poly Distance Club</em> as well as the <em>Mustang Marching Band</em>. I also enjoy baking and playing board games.
             </p>
           </div>
-        </div>
-        <div className={style.blogContainer}>
-          {blogs.map(blog => 
-            <BlogPreview key={blog.name} {...blog} />
-          )}
+          )
         </div>
       </main>
     </div>

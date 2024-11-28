@@ -1,17 +1,27 @@
 import React from 'react';
-import type { Blog } from "@/typings/blog.ts";
+//import type { Blog } from "@/typings/blog.ts";
+import type Blog from "@/database/blogSchema.ts";
 import Image from 'next/image';
 import style from '@styles/blog.module.css';
 import Link from "next/link";
 
 export default function BlogPreview(props: Blog) {
+  console.log(props); 
+
+  // convert string to date and make sure its valid
+  const dateObject = new Date(props.date);
+
+  const formattedDate = !isNaN(dateObject.getTime()) 
+    ? dateObject.toLocaleDateString()
+    : "Date not available"; 
+  
   return (
     <div className={style.blogPost}>
-      <h1>{props.name}</h1>
+      <h1>{props.title}</h1>
       <div>
-        <Image src={props.image} alt={props.imageAlt} width={500} height={500} />
+        
         <p>{props.description}</p>
-        <p>{props.posted}</p>
+        <p>{formattedDate}</p>
         <p>
           <Link href={props.slug}>Read More</Link>
         </p>

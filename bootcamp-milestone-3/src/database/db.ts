@@ -1,6 +1,7 @@
 // db.ts
 import mongoose from "mongoose";
 import Blog from "@/database/blogSchema";
+import Portfolio from "@/database/portfolioSchema";
 
 const url: string = process.env.MONGO_URI as string;
 let connection: typeof mongoose;
@@ -29,4 +30,17 @@ export const getBlogs = async () => {
 	} catch (err) {
 	  return null;
 	}
-  };
+};
+
+export const getPortfolios = async () => {
+	await connectDB();
+  
+	try {
+	  // Query for all blogs and sort by date
+	  const portfolios = await Portfolio.find().sort({ date: -1 }).orFail();
+	  // return stuff here
+	  return portfolios;
+	} catch (err) {
+	  return null;
+	}
+};
