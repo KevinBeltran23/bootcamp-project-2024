@@ -4,9 +4,9 @@ import { connectDB } from "@/database/db"
 import blogSchema from "@/database/blogSchema"
 
 type IParams = {
-		params: {
-			slug: string
-		}
+	params: {
+		slug: string
+	}
 }
 
 // If { params } looks confusing, check the note below this code block
@@ -21,3 +21,4 @@ export async function GET(req: NextRequest, { params }: IParams) {
 	        return NextResponse.json('Blog not found.', { status: 404 })
 	    }
 }
+

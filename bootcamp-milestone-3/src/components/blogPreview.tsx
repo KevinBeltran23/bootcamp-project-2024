@@ -23,7 +23,7 @@ export default function BlogPreview(props: Blog) {
         <p>{props.description}</p>
         <p>{formattedDate}</p>
         <p>
-          <Link href={props.slug}>Read More</Link>
+          <Link href={`/blogs/${props.slug}`}>Read More</Link>
         </p>
       </div>
     </div>
