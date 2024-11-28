@@ -61,18 +61,31 @@ export default function BlogPage() {
           </main>
         </div>
       );
-      return (
-        <div>
-          <main>
-            <h1 className={style.blogTitle}>Blog</h1>
-            <div id={style.blogContainer} className={style.blogContainer}>
-              <p>Welcome to My Blog! This is a work in progress :)</p>
-    
-              <div>
-                {blog ? ((<BlogPreview {...blog} />)) : (<p>No blogs available.</p> )}
-              </div>
+
+  return (
+    <div>
+      <main>
+        <h1 className={style.blogTitle}>Blog</h1>
+        <div id={style.blogContainer} className={style.blogContainer}>
+          <p>Welcome to My Blog! This is a work in progress :)</p>
+
+          <div>
+            {blog ? (<BlogPreview {...blog} />) : (<p>No blog found</p>)}
+          </div>
+
+          {/* Comments Section */}
+          {blog?.comments && blog.comments.length > 0 ? (
+            <div className={style.commentsSection}>
+              <h2>Comments:</h2>
+              {blog.comments.map((comment, index) => (
+                <Comment key={index} comment={comment} />
+              ))}
             </div>
-          </main>
+          ) : (
+            <p>No comments yet.</p>
+          )}
         </div>
-      );
+      </main>
+    </div>
+  );
 }
