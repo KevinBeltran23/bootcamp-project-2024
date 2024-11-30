@@ -6,9 +6,9 @@ import style from '@styles/blog.module.css';
 import Link from "next/link";
 
 export default function BlogPreview(props: Blog) {
-  console.log(props); 
+  console.log(props);
 
-  // convert string to date and make sure its valid
+  // Convert string to date and make sure it's valid
   const dateObject = new Date(props.date);
 
   const formattedDate = !isNaN(dateObject.getTime()) 
@@ -19,7 +19,6 @@ export default function BlogPreview(props: Blog) {
     <div className={style.blogPost}>
       <h1>{props.title}</h1>
       <div>
-        
         <p>{props.description}</p>
         <p>{formattedDate}</p>
         <p>

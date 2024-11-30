@@ -23,14 +23,14 @@ export const getBlogs = async () => {
 	await connectDB();
   
 	try {
-	  // Query for all blogs and sort by date
-	  const blogs = await Blog.find().sort({ date: -1 }).orFail();
+	  // Query for all blogs, populate the comments field with actual comment data
+	  const blogs = await Blog.find().sort({ date: -1 }).populate('comments').orFail();
 	  // return stuff here
 	  return blogs;
 	} catch (err) {
 	  return null;
 	}
-};
+  };
 
 export const getPortfolios = async () => {
 	await connectDB();

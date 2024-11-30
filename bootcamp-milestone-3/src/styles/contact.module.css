@@ -7,9 +7,15 @@
   width: 100%;
 }
 
+.contactForm h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 .contactForm input[type="text"],
+.contactForm input[type="email"],
 .contactForm textarea {
-  width: 95%;
+  width: 100%; /* Ensure full width */
   padding: 10px;
   margin: 0 auto 20px auto;
   display: block;
@@ -19,6 +25,7 @@
 }
 
 .contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
 .contactForm textarea:focus {
   border-color: var(--cg-blue);
   outline: none;

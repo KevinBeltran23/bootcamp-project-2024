@@ -7,9 +7,20 @@ type Blog = {
 	date: Date;
 	description: string; // for preview
 	content: string; // for individual blog page
-	comments: Comment[]; // array for comments
+	comments: IComment[]; // array for comments
 };
 
+type IComment = {
+	user: string;
+	comment: string;
+	time: Date;
+}
+
+const commentSchema = new Schema<IComment>({
+	user: { type: String, required: true },
+	comment: { type: String, required: true },
+	time: { type: Date, default: new Date() },
+});
 
 // mongoose schema 
 const blogSchema = new Schema<Blog>({
@@ -18,6 +29,7 @@ const blogSchema = new Schema<Blog>({
 	date: { type: Date, required: false, default: new Date()},
 	description: { type: String, required: true },
 	content: { type: String, required: true },
+	comments: [commentSchema] 
 })
 
 // defining the collection and model

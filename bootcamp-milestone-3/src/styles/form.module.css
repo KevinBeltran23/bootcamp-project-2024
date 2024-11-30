@@ -1,0 +1,73 @@
+/* form.styles.css */
+
+  .contactForm {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--cg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+  }
+
+  /* Modify label styles */
+  .contactForm label {
+    font-size: 1rem;               /* Set font size */
+    font-weight: bold;             /* Make the label bold */
+    color: var(--cg-grey);         /* Adjust label color */
+    margin-bottom: 5px;            /* Add some space below the label */
+    display: block;                /* Ensure labels are displayed as block elements */
+    text-transform: capitalize;    /* Capitalize the label text */
+  }
+  
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 1px solid var(--cg-grey);
+    border-radius: 4px;
+    transition: border 0.3s;
+  }
+  
+  .contactForm input[type="text"]:focus,
+  .contactForm input[type="email"]:focus,
+  .contactForm textarea:focus {
+    border-color: var(--cg-blue);
+    outline: none;
+  }
+  
+  .contactForm textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contactForm input[type="submit"] {
+    background-color: var(--cg-blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .contactForm input[type="submit"]:hover {
+    background-color: var(--cg-dark-blue);
+  }
+  
+  @media (max-width: 768px) {
+    .contactForm {
+      padding: 15px;
+    }
+  
+    .contactTitle {
+      font-size: 1.8rem;
+    }
+  
+    .contactParagraph {
+      font-size: 1rem;
+    }
+  }
+  
