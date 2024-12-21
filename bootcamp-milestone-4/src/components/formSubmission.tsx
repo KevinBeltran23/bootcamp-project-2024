@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// FormSubmission.tsx
+import React, { useState } from 'react';
 import styles from '@/styles/form.module.css';
 
 interface IFormSubmissionProps {
@@ -11,10 +12,6 @@ interface IFormSubmissionProps {
 const FormSubmission: React.FC<IFormSubmissionProps> = ({ onSubmit, fields, buttonText, initialData = {} }) => {
   const [formData, setFormData] = useState<{ [key: string]: string }>(initialData);
   const [message, setMessage] = useState<string | null>(null);
-
-  useEffect(() => {
-    setFormData(initialData);
-  }, [initialData]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
